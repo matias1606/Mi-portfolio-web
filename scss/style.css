@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+:root {
+  --fw-reg: 400;
+  --fw-bold: 900;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+body {
+  background: #fff;
+  color: #003d5bff;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: var(--fs-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+nav {
+  display: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+section .section__title {
+  margin-bottom: .25em;
+}
+
+section .section__title.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+section .section__title.section__title--intro strong {
+  display: block;
+}
+
+section .section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+section .section__subtitle.section__subtitle--intro,
+section .section__subtitle .section__subtitle--about {
+  padding: .25em 1em;
+  background: #edae49ff;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 1em;
+}
+
+section .section__subtitle.section__subtitle--intro {
+  position: relative;
+  left: -1.5em;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  grid-column: -1/1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: right;
+  width: calc(100%+1.5em);
+}
+
+section.intro {
+  position: relative;
+}
+
+section.intro img {
+  -webkit-box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+          box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1em;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 0 auto;
+        grid-template-areas: "img title" "img subtitle";
+    -ms-grid-columns: min-content max-content;
+        grid-template-columns: -webkit-min-content -webkit-max-content;
+        grid-template-columns: min-content max-content;
+  }
+  .intro__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi-portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            
+            
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="cambiar-idioma">
+                <span id="espaniol"class="esp">Español(Spanish)</span>
+                <input id="switch" type="checkbox" class="check" onchange="chequearBoton()">
+                <span id="ingles" class="eng">English(Inglés)</span>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link en">My Services</a>
+                        <a href="#services" class="nav__link es">Mis Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link en">About Me</a>
+                        <a href="#about" class="nav__link es">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link en">My work</a>
+                        <a href="#work" class="nav__link es">Mis proyectos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro en">
+                Hi i´m <strong>Matias De La Fuente</strong>
+            </h1>
+            <h1 class="section__title section__title--intro es">
+                Soy <strong>Matias De La Fuente!</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro en">
+                front-end dev
+            </p>
+            <p class="section__subtitle section__subtitle--intro es">
+                desarrollador front-end
+            </p>
+            <img src="img/foto-perfil-1.jpg" class="intro__img" alt="a photo of matias">
+        </section>
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services en">What i do</h2>
+            <h2 class="section__title section__title--services es">Aptitudes</h2>
+            <div class="services en">
+                <div class="service">
+                    <h3>Desing + development</h3>
+                    <p>I design web pages using html, javascript, css, bootstrap and others wich i show below with its proper icons</p>
+                </div>   
+                <!-- service -->
+                <div class="service">
+                    <h3>E-commerce</h3>
+                    <p>My most recent proyect is an E-commerce using React JS
+                    </p>
+                </div>   
+                <!-- service -->
+            </div>
+            <div class="services es">
+                <div class="service">
+                    <h3>Diseño y desarrollo</h3>
+                    <p>Diseño y desarrollo de paginas web utilizando html, javascript, css, boostrap y demas tecnologias 
+                        que se encuentran debajo
+                    </p>
+                </div>   
+                <!-- service -->
+                <div class="service">
+                    <h3>E-commerce</h3>
+                    <p>Experiencia reciente creando un E-commerce en React JS</p>
+                </div>
+                <!-- service -->
+            </div>
+            
+            <div class="skills"> 
+                        <a title="html5"><i class="fab fa-html5"></i></a>
+                        <a title="css"><i class="fab fa-css3-alt"></i></a>
+                        <a title="sass"><i class="fab fa-sass"></i></a>
+                        <a title="js"><i class="fab fa-js"></i></a>
+                        <a title="bootstrap"><i class="fab fa-bootstrap"></i></a>
+                        <a title="python"><i class="fab fa-python"></i></a>
+                        <a title="react"><i class="fab fa-react"></i></a>
+                        <a title="github"><i class="fab fa-github-square"></i></a>
+
+             </div>
+            <a href="#work" class="btn eng">My Work</a>
+            <a href="#work" class="btn esp">Mis proyectos </a>
+        </section>
+        <section id="about" class="about-me">
+            <h2 class="section__title section__title--about en">
+                Who i am
+            </h2>
+            <h2 class="section__title section__title--about es">
+                Quien soy
+            </h2>
+            <p class="section__subtitle section__subtitle--about en">
+                Designer + Developer
+            </p>
+            <p class="section__subtitle section__subtitle--about es">
+                Diseñador y desarrollador
+            </p>
+            <div class="about-me__body">
+                <p class="es">
+                    Luego de la finalización de mis estudios
+                    secundarios me dediqué al aprendizaje de
+                    distintos lenguajes de programación
+                    principalmente orientados al diseño de paginas
+                    web.
+                    Además me capacité en el lenguaje python
+                    enfocado en la lógica y la resolución de
+                    problemas
+                </p>
+                <p class="en">
+                    after i graduated from high school i started doing programming courses focused on web design and development. Also i have some python knowledge based in algorythm and data structures.
+                </p>
+            </div>
+            <img src="img/foto-cuerpo.png" alt="Matias Starring" class="about-me__img">
+        </section>
+        <!-- My work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work en">My Work</h2>
+            <h2 class="section__title section__title--work es">Mis Proyectos</h2>
+            <p class="section__subtitle section__subtitle--work en">a selection of my work</p>
+            <p class="section__subtitle section__subtitle--work es">Algunos de mis proyecto</p>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item react-app" >
+                    <img src="img/e-commerce-react.png" alt="" class="portfolio__img">
+                </a>
+                <a href="https://matias1606.github.io/Proyecto-Unus/index.html" class="portfolio__item unus" >
+                    <img src="img/Unus.png" alt="" class="portfolio__img">
+                </a>
+                <a href="https://matias1606.github.io/juego-coder/" class="portfolio__item juego" >
+                    <img src="img/Juego-coder.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+    <footer class="footer">
+        <a href="mailto:hello@jane.dev" class="footer__link">matucpodlo@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/matias1606"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/matias-de-la-fuente-b07838155/"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/matias_delafuente/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+<script src="js/index.js"></script>
+</body>
+</html>
